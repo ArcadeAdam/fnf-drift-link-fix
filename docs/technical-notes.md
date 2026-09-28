@@ -67,7 +67,7 @@ The investigation established the following before the correction:
 - Network traffic remained active and the observed game tick rate was approximately 60 ticks per second.
 - The same spawn problem remained with force feedback disabled.
 
-After applying the correction to both executables, the user reported that both cars started correctly and remained synchronized in a two-cabinet race with the second cabinet hosting. This validates the reported case. It does not establish the patched reverse-host arrangement, more than two cabinets, or all game modes.
+After applying the correction to both executables, the user reported that both cars started correctly and remained synchronized in a two-cabinet race with the second cabinet hosting. The final test restarted both games, switched hosting to the first cabinet, and completed a full race successfully. The second cabinet's capture also recorded it joining as the client and both cars moving. These results validate the tested two-cabinet setup in both hosting orders and persistence across game restarts. More than two cabinets and all game modes remain unvalidated.
 
 ## Boundaries
 

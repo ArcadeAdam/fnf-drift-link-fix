@@ -62,7 +62,7 @@ This is a derived workaround. The factory instruction at this location is unknow
 
 Before the fix, the misplaced car followed the host role when the two cabinets exchanged roles. Solo play started normally, and disabling force feedback did not resolve the linked-race problem.
 
-With the fix applied to both cabinets, the user confirmed that both cars started correctly and stayed synchronized in a two-cabinet race with the second cabinet hosting. The patched reverse-host arrangement and races with more than two cabinets have not yet been validated.
+With the fix applied to both cabinets, the user confirmed that both cars started correctly and stayed synchronized with the second cabinet hosting. A final test restarted both games, reversed the hosting order, and completed a full race successfully. This verifies the tested two-cabinet setup with either cabinet hosting and the fix persisting across game restarts. Races with more than two cabinets and all game modes have not been validated.
 
 This repository does not provide general LAN setup instructions. In particular, adding `-net` alone is not a complete setup procedure for this build: cached machine identity and startup branches can affect network initialization. Preserve a working link configuration while testing this specific correction.
 
