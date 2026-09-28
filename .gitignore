@@ -1,0 +1,8 @@
+__pycache__/
+*.py[cod]
+*.exe
+*.dll
+*.bak
+*.tmp
+*.zip
+dist/
