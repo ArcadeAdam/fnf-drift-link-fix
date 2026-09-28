@@ -1,5 +1,19 @@
 # Technical notes
 
+## Windows app
+
+The Windows download is a small C# Windows Forms app. It runs on the .NET Framework included with Windows 10 and 11; no Python installation is needed. Its source is in `src/`. It uses the same exact file hashes and six-byte correction as the Python tool.
+
+Build and run its tests from PowerShell:
+
+```powershell
+.\build-windows.ps1 -Test
+```
+
+The result is `dist/FNFDriftLinkFix.exe`. The build uses the Windows .NET Framework compiler, runs synthetic file tests, and checks that the app's window can initialize without showing it or opening a game file. The app does not request administrator access automatically. Its original backup uses the same filename as the Python tool, so the two tools can share backups.
+
+For supported executable hashes, Python commands, backup and restore behavior, and patcher tests, see [command-line use](command-line.md).
+
 ## Observed defect
 
 The supported executable contains a starting-grid routine at virtual address `0x486BE0`. Its human-player pass uses an eight-pointer temporary array.
